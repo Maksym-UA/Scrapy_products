@@ -14,7 +14,7 @@ Install Scrapy with
 pip install Scrapy
 ```
 
-> Note that sometimes this may require solving compilation issues for some Scrapy dependencies depending on your operating system, so be > sure to check the [Platform specific installation notes](https://doc.scrapy.org/en/latest/intro/install.html#intro-install-platform-notes) 
+> Note that sometimes this may require solving compilation issues for some Scrapy dependencies depending on your operating system, so be  sure to check the [Platform specific installation notes](https://doc.scrapy.org/en/latest/intro/install.html#intro-install-platform-notes) 
 
 Now you are ready to start the project
 
@@ -43,7 +43,7 @@ yourpoject/
             __init__.py
 ```
 
-To put this spider to work, go to the project’s top level directory and run:
+To put this spider (actually crawler) to work, go to the project’s top level directory and run:
 
 ```
 scrapy crawl dior_spider -o links.csv -t csv
@@ -55,7 +55,10 @@ scrapy crawl dior_spider -o goods.json
 
 Results will be saved to goods.json file. Further analysis can be performed with help of [Pandas](https://pandas.pydata.org/) library.
 
-
+The best way to learn how to extract data with Scrapy is trying selectors using the shell [Scrapy shell](https://doc.scrapy.org/en/latest/topics/shell.html#topics-shell)
+```
+scrapy shell 'URL'
+```
 ### CONTACT
 
 Please send you feedback to
