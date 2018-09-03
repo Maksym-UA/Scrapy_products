@@ -53,7 +53,7 @@ scrapy crawl dior_spider -o links.csv -t csv
 scrapy crawl dior_spider -o goods.json 
 ```
 
-Results will be saved to goods.json file. Further analysis can be performed with help of [Pandas](https://pandas.pydata.org/) library.
+Results will be saved to goods.json file (added to the repository). Further analysis can be performed with help of [Pandas](https://pandas.pydata.org/) library.
 
 The best way to learn how to extract data with Scrapy is trying selectors using the shell [Scrapy shell](https://doc.scrapy.org/en/latest/topics/shell.html#topics-shell)
 ```
